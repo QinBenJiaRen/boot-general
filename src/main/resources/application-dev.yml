@@ -1,0 +1,44 @@
+#主数据源配置
+spring:
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://192.168.1.242:3306/small_neighborhood?useSSL=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: testuser
+      password: Ceshi#@!0714
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      maxActive: 5
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      maxOpenPreparedStatements: 20
+      removeAbandoned: true
+      removeAbandonedTimeout: 1800
+      logAbandoned: true
+      filters: stat
+#从数据源配置
+    secondary:
+      jdbc-url: jdbc:mysql://192.168.1.242:3306/small_neighborhood?useSSL=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: testuser
+      password: Ceshi#@!0714
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      maxActive: 5
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      maxOpenPreparedStatements: 20
+      removeAbandoned: true
+      removeAbandonedTimeout: 1800
+      logAbandoned: true
+      filters: stat
