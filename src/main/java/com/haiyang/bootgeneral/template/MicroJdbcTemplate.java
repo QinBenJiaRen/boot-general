@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 
 /**
- * @Description JDBC操作模板,对JdbcTemplate的简单封装
+ * @Description JDBC操作模板,对JdbcTemplate的简单封装,使用appliaction-dev.yml配置文件时使用
  * @Author jia_h
  * @Date 2020/12/2 10:33
  * @Version 1.0

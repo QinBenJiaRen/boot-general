@@ -47,10 +47,5 @@ public class DynamicDataSourceConfig {
         targetDataSource.put(DataSourceNames.MASTER.getName(), master);
         targetDataSource.put(DataSourceNames.SLAVE.getName(), slave);
         return new DynamicDataSource(masterDataSource(), targetDataSource);
-
     }
-
-
-
-
 }
