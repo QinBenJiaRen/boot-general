@@ -16,18 +16,23 @@ import org.springframework.jdbc.core.JdbcTemplate;
 @SpringBootTest
 public class DataSourceTest {
 
-    @Autowired
-    @Qualifier("primaryJdbcTemplate")
+    //@Autowired
+    //@Qualifier("primaryJdbcTemplate")
     protected JdbcTemplate primaryJdbcTemplate;
 
-    @Autowired
-    @Qualifier("secondaryJdbcTemplate")
+    //@Autowired
+    //@Qualifier("secondaryJdbcTemplate")
     protected JdbcTemplate secondaryJdbcTemplate;
 
-    @Test
-    public void test_01_insert() {
+    //@Test
+    /*public void test_01_insert() {
 
         primaryJdbcTemplate.update("insert into roles (roleId, roleName, roleCode, userId, is_button) values (?, ?, ?, ?, ?)", 46, "test", "ROLE_TEST", 0, 1);
 
+    }*/
+
+    @Test
+    public void test() {
+        System.out.println("启动单元测试");
     }
 }
